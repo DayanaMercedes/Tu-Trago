@@ -1,0 +1,20 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

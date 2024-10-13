@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: white;
+}
+
+header {
+    background-color: #201f1f;
+    width: 100%;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: justify;
+    position: fixed;
+    font-family: Georgia;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 1em;
+}
+
+.img {
+    /* Alineando img de tu  trago */
+    height: 15em;
+    width: 16em;
+    border-radius: 15em;
+}
+
+.logo span {
+    color: white;
+}
+
+.hero {
+    background: url('img/licoreria-hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.cta-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #e5533b;
+}
+
+.menu-section,
+.promotions-section,
+.contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: gainsboro;
+    /* Cambiado el fondo para que el texto sea visible */
+    color: black;
+    font-family: 'Lucida Sans';
+}
+
+.menu-grid,
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.menu-item,
+.promo-item {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover,
+.promo-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img,
+.promo-item img {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #ff0000;
+}
+
+.details-btn,
+.promo-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details-btn:hover,
+.promo-btn:hover {
+    background-color: #e5533b;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-form button:hover {
+    background-color: #e5533b;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Mejorar la visualización en pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .cta-btn {
+        padding: 0.5rem 1rem;
+    }
+
+    .img {
+        height: auto;
+        width: 100%;
+    }
+
+    .menu-grid,
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+}

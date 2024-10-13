@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - TU TRAGO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/admin.css">
+    <link rel="stylesheet" href="admin.js">
+</head>
+
+<body>
+    <header class="bg-dark text-white p-3 text-center">
+        <h1>Panel de Administración - TU TRAGO</h1>
+    </header>
+
+    <div class="container mt-4">
+        <!-- Sección para agregar productos -->
+        <section>
+            <h2>Agregar Nuevo Producto</h2>
+            <form id="product-form" class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <label for="product-name" class="form-label">Nombre del Producto</label>
+                    <input type="text" class="form-control" id="product-name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="product-price" class="form-label">Precio</label>
+                    <input type="number" class="form-control" id="product-price" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="product-description" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="product-description" rows="3" required></textarea>
+                </div>
+                <div class="col-md-12">
+                    <label for="product-image" class="form-label">Imagen del Producto</label>
+                    <input type="file" class="form-control" id="product-image" accept="image/*">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">Agregar Producto</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Sección para agregar promociones -->
+        <section>
+            <h2>Agregar Nueva Promoción</h2>
+            <form id="promo-form" class="row g-3">
+                <div class="col-md-6">
+                    <label for="promo-title" class="form-label">Título de la Promoción</label>
+                    <input type="text" class="form-control" id="promo-title" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="promo-discount" class="form-label">Descuento (%)</label>
+                    <input type="number" class="form-control" id="promo-discount" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="promo-description" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="promo-description" rows="3" required></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">Agregar Promoción</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Listado de productos y promociones -->
+        <section class="mt-5">
+            <h2>Productos Disponibles</h2>
+            <ul id="product-list" class="list-group mb-4">
+                <!-- Aquí se mostrarán los productos agregados -->
+            </ul>
+
+            <h2>Promociones Actuales</h2>
+            <ul id="promo-list" class="list-group">
+                <!-- Aquí se mostrarán las promociones agregadas -->
+            </ul>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2024 TU TRAGO. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/admin.js"></script>
+</body>
+
+</html>
